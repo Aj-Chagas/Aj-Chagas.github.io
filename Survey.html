@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+  <title>Survey - Fashion Wave</title>
+  <meta name="description" content="Fashion Wave's. Question Title. * 1. What is your gender? Male. Female. Other.">
+  <meta name="Keywords" content="fashion wave survey, fashion wave questions">
+  <meta charset="utf-8">
+<script type="text/jscript" src="JavaScript.js"></script> 	
+<style>
+	
+html, body {
+		font-family: Arial, Helvetica, sans-serif;
+		height: 100%;
+		margin: 0;
+	}	
+	
+	.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 0px;
+  background-color: none;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+	
+.item1{
+grid-area: 1 / 1 / 2 / 9 
+}
+
+.item2{
+grid-area: 2 / 1 / 3 / 2;
+}
+
+.item3{
+grid-area: 2 / 2 / 3 / 3;
+}
+
+.item4{
+grid-area: 2 / 3 / 3 / 4;	
+}
+
+.item5{
+grid-area: 2 / 4 / 3 / 5;
+}
+
+.item6{
+grid-area: 2 / 5 / 3 / 6 ;	
+}
+
+.item7{
+grid-area: 2 / 6 / 3 / 7;	
+}
+
+.item8{
+grid-area: 2 / 7 / 3 / 8;	
+}
+
+.item9{
+grid-area: 2 / 8 / 3 / 9 ;
+}
+	
+.item10{
+grid-area: 3 / 1 / 4 / 9;	
+}
+	
+.item11{ 
+grid-area: 4 / 1 / 5 / 4;
+	
+}
+
+.item12{ 
+grid-area: 4 / 4 / 5 / 5; 
+}	
+	
+.item13{ 
+grid-area: 4 / 5 / 5 / 6; 
+}	
+	
+.item14{ 
+grid-area: 4 / 6 / 5 / 7; 
+}	
+	
+.item15{ 
+grid-area: 4 / 7 / 5 / 8;
+}	
+	
+.item16{ 
+grid-area: 4 / 8 / 5 / 9; 
+}
+
+#footer{	
+font-size: 20px;	
+background-color: #2A2A2A;
+color: white;
+padding: 0px;	
+}
+	
+	
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #2A2A2A;
+  color: white; 
+  border: none;
+  width: 100%;	  
+}
+
+
+.button:hover {
+  background-color: white;
+  color: rgba(255,68,71,1.00);
+}
+
+.buttonF {padding: 20px 32px;
+  text-align: center;
+  font-size: 20px;	
+  margin: 0px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #2A2A2A; 
+  color: white; 
+  border: none;
+  width: 100%;	  
+}
+
+
+.buttonF:hover {
+  background-color: white;
+  color: rgba(255,68,71,1.00);
+}	
+
+a{
+color: inherit;
+text-decoration: none;	
+}
+	
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;		
+}
+	
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 20px;
+  width: 100%;	
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+	
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}		
+	
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 0px;
+  background-color: none;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}	
+
+* {
+  box-sizing: border-box;
+}
+	
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2A2A2A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: rgba(255,68,71,1.00)
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+		
+</style>
+	
+</head>
+
+<body>
+	
+<div class="grid-container">
+  <div class="item1"><a href="Fashion Wave.html"><img src="Img/FW Logo 2.png" width="400" height="200" alt=""/></a></div>
+  <div class="item2"><a href="Fashion Wave.html"><button class="button">Home</button></a></div>
+  <div class="item3" ><div class="dropdown"><a href="Products.html"><button class="button">Products</button></a><div class="dropdown-content"><a href="Men.html">Men Clothing</a><a href="Women.html">Women Clothing</a></div></div></div>  
+  <div class="item4"><a href="Login.html"><button class="button">Log-In</button></a></div>
+  <div class="item5"><a href="Register.html"><button class="button">Register</button></a></div>
+  <div class="item6"><a href="Survey.html"><button class="button">Survey</button></a></div>
+  <div class="item7"><a href="Contact Us.html"><button class="button">Contact Us</button></a></div>
+  <div class="item8"><button class="button">FAQ</button></div>  
+  <div class="item9"><button class="button">Search</button></div>	
+  
+	<div class="item10" style="margin: 30px; text-align: left;">
+	 <h3>Survey</h3>	
+	<form novalidate name="sform" onSubmit="return validateSForm()" method="post">
+	
+    <label for="gender">Gender*</label><br>
+	<input type="radio" name="gender" value="male">	
+    <label for="male" style="font-size: 20px;">Male</label><br>
+	<input type="radio" name="gender" value="female">	
+	<label for="female" style="font-size: 20px;">Female</label><br>
+	<input type="radio" name="gender" value="other">	
+	<label for="other" style="font-size: 20px;">Other</label><br>&nbsp;<br>	
+ 
+    <label for="country">Country*</label>
+    <select id="country" name="country">
+	  <option value="none">Please Select</option>	
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+	  <option value="chile">Chile</option>	
+	  <option value="colombia">Colombia</option>
+	  <option value="germany">Germany</option>
+	  <option value="uk">United Kingdom</option>
+	  <option value="spain">Spain</option>	
+      <option value="usa">USA</option> 	
+    </select> 	
+    
+		
+    <label>Please select a number to answer the following questions:</label><br>
+	<p style="font-size:15px;">(1 means "totally disagree" and 5 means "totally agree")</p><br>
+	<label for="des" style="font-size: 17px;">A) I like the clothes designs offered in the website: *</label><br>
+	<label for"des1" style="font-size:20px;">1</label>	
+	<input type="radio" id="des1" name="des" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"des2" style="font-size:20px;">2</label>	
+	<input type="radio" id="des2" name="des" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"des3" style="font-size:20px;">3</label>	
+	<input type="radio" id="des3" name="des" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"des4" style="font-size:20px;">4</label>	
+	<input type="radio" id="des4" name="des" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"des5" style="font-size:20px;">5</label>	
+	<input type="radio" id="des5" name="des" value="5"><br>&nbsp;<br>
+		
+	<label for="qua" style="font-size: 17px;">B) I am satisfied with the quality of the materials used: *</label><br>
+    <label for"qua1" style="font-size:20px;">1</label>	
+	<input type="radio" id="qua1" name="qua" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"qua2" style="font-size:20px;">2</label>	
+	<input type="radio" id="qua2" name="qua" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"qua3" style="font-size:20px;">3</label>	
+	<input type="radio" id="qua3" name="qua" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"qua4" style="font-size:20px;">4</label>	
+	<input type="radio" id="qua4" name="qua" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"qua5" style="font-size:20px;">5</label>	
+	<input type="radio" id="qua5" name="qua" value="5"><br>&nbsp;<br>
+	
+	<label for="eco" style="font-size: 17px;">C) I am happy with the usage of reciclated materials for every Fashion Wave product: *</label><br>
+	<label for"eco1" style="font-size:20px;">1</label>	
+	<input type="radio" id="eco1" name="eco" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco2" style="font-size:20px;">2</label>	
+	<input type="radio" id="eco2" name="eco" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco3" style="font-size:20px;">3</label>	
+	<input type="radio" id="eco3" name="eco" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco4" style="font-size:20px;">4</label>	
+	<input type="radio" id="eco4" name="eco" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco5" style="font-size:20px;">5</label>	
+	<input type="radio" id="eco5" name="eco" value="5"><br>&nbsp;<br>	
+		
+	<label for="del" style="font-size: 17px;">D) I am satisfied with the delivery service (including waiting time): *</label><br>
+	<label for"eco1" style="font-size:20px;">1</label>	
+	<input type="radio" id="del1" name="del" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco2" style="font-size:20px;">2</label>	
+	<input type="radio" id="del2" name="del" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco3" style="font-size:20px;">3</label>	
+	<input type="radio" id="del3" name="del" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco4" style="font-size:20px;">4</label>	
+	<input type="radio" id="del4" name="del" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"eco5" style="font-size:20px;">5</label>	
+	<input type="radio" id="del5" name="del" value="5"><br>&nbsp;<br>
+		
+	<label for="web" style="font-size: 17px;">E) The website is appropriate and easy to use: *</label><br>
+	<label for"web1" style="font-size:20px;">1</label>	
+	<input type="radio" id="web1" name="web" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"web2" style="font-size:20px;">2</label>	
+	<input type="radio" id="web2" name="web" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"web3" style="font-size:20px;">3</label>	
+	<input type="radio" id="web3" name="web" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"web4" style="font-size:20px;">4</label>	
+	<input type="radio" id="web4" name="web" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"web5" style="font-size:20px;">5</label>	
+	<input type="radio" id="web5" name="web" value="5"><br>&nbsp;<br>
+		
+	<label for="csv" style="font-size: 17px;">F) The customer service provided through the website is appropriate, fast and helpful: *</label><br>
+	<label for"csv1" style="font-size:20px;">1</label>	
+	<input type="radio" id="csv1" name="csv" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"csv2" style="font-size:20px;">2</label>	
+	<input type="radio" id="csv2" name="csv" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"csv3" style="font-size:20px;">3</label>	
+	<input type="radio" id="csv3" name="csv" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"csv4" style="font-size:20px;">4</label>	
+	<input type="radio" id="csv4" name="csv" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<label for"csv5" style="font-size:20px;">5</label>	
+	<input type="radio" id="csv5" name="csv" value="5"><br>&nbsp;<br>	
+	
+		
+		
+    <label for="subject">Let us know what you think, we appreciate your feedback!</label>
+    <textarea id="subject" name="subject" placeholder="Please, write here your opinion and ideas" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+	
+  </form>
+	</div>
+	
+	
+  <div class="item11" id="footer" style="padding-top: 20px;">  &copy; All Rights Reserved By Fashion Wave 2020</div>
+  <div class="item12" id="footer"><button class="buttonF">Copyright</button></div>
+  <div class="item13" id="footer"><button class="buttonF">Privacy Policy</button></div>
+  <div class="item14" id="footer"><button class="buttonF">Legal Issues</button></div>
+  <div class="item15" id="footer"><button class="buttonF">Help and Support</button></div>
+  <div class="item16" id="footer"><a href="Contact Us.html"><button class="buttonF">Contact</button></a></div>
+   	
+</div>
+	
+</body>
+</html>
